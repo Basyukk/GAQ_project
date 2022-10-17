@@ -22,12 +22,17 @@ main {
         color: $gray;
     }
 }
+// .button {
+//     border: none;
+//     background-color: #fff;
+// }
 .btn {
     background-color: $red;
-    padding: 18px 30px;
+    padding: 18px 48px;
     display: inline-flex;
     align-items: center;
     gap: 40px;
+    border: none;
     font-weight: 494;
     font-size: 22px;
     line-height: 24px;
@@ -44,5 +49,20 @@ main {
         svg {
             transform: translateX(10px);
         }
+    }
+}
+.btn__outline {
+    padding: 18px 48px;
+    border: 1px solid $lightgray;
+    font-weight: 494;
+    background-color: #fff;
+    font-size: 22px;
+    line-height: 24px;
+    color: $blue;
+
+    &:hover {
+        background: $blue;
+        transition: 0.5s all ease;
+        color: white;
     }
 }

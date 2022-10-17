@@ -14,13 +14,15 @@
             flex-direction: column;
         }
     }
-    .logo {
-        padding-bottom: 89px;
-        display: flex;
-    }
+
     &__btn {
         margin-top: 40px;
+        padding: 18px 30px;
     }
+}
+.logo {
+    padding-bottom: 89px;
+    display: flex;
 }
 .link {
     margin-top: auto;
