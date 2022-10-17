@@ -1,0 +1,48 @@
+body {
+    box-sizing: border-box;
+    font-family: "Author", sans-serif;
+}
+main {
+    padding: 50px 200px;
+}
+
+.section {
+    &__title {
+        font-style: normal;
+        font-weight: 494;
+        font-size: 50px;
+        line-height: 56px;
+
+        color: $blue;
+    }
+    &__text {
+        font-weight: 375;
+        font-size: 20px;
+        line-height: 22px;
+        color: $gray;
+    }
+}
+.btn {
+    background-color: $red;
+    padding: 18px 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 40px;
+    font-weight: 494;
+    font-size: 22px;
+    line-height: 24px;
+
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s all ease;
+    max-width: fit-content;
+    svg {
+        transition: 0.3s all ease;
+    }
+    &:hover {
+        background: rgb(176, 0, 0);
+        svg {
+            transform: translateX(10px);
+        }
+    }
+}
