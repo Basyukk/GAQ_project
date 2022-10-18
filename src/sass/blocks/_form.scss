@@ -1,11 +1,10 @@
 .steps {
-    &__form {
-    }
     &__numbers {
         display: flex;
         align-items: center;
         position: relative;
         max-width: 650px;
+        margin-bottom: 60px;
     }
 }
 .step {
@@ -37,18 +36,48 @@
     background: $lightgray;
     z-index: -1;
 }
-.progress__success {
-}
-.step__number {
-}
+.form {
+    // .form__input
 
-.form__step {
+    &__input {
+        display: flex;
+        position: relative;
+        border: 1px solid $lightgray;
+        max-width: 460px;
+        &.search__input {
+            margin-top: 40px;
+        }
+    }
 }
-.step__buttons {
+.input {
+    padding: 20px 20px 20px 65px;
+    border: none;
+    width: 100%;
+    font-weight: 375;
+    font-size: 18px;
+    line-height: 20px;
+    color: $gray;
+    &:focus {
+        outline: 1px solid $red;
+    }
+
+    &__img {
+        position: absolute;
+        left: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
-.button {
-}
-.prev__step {
-}
-.next__step {
+.form {
+    &__item {
+    }
+    &__item-title {
+        margin-top: 40px;
+        font-weight: 494;
+        font-size: 25px;
+        line-height: 28px;
+        /* identical to box height */
+
+        color: $blue;
+    }
 }
