@@ -1,0 +1,79 @@
+.checkboxes {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.checkbox {
+    // .checkbox__input
+
+    &__input {
+        display: none;
+        &:checked ~ .fake:after {
+            opacity: 1;
+        }
+        &:checked ~ .border {
+            opacity: 1;
+        }
+    }
+    &__item {
+        display: flex;
+        max-width: 360px;
+        width: 100%;
+        padding: 20px;
+        background-color: $ligtblue;
+        align-items: center;
+        position: relative;
+        .fake {
+            width: 30px;
+            height: 30px;
+            border: 1px solid #e5e4e1;
+            border-radius: 5px;
+            background: #fff;
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            &::after {
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                content: "";
+                border-radius: 5px;
+                background: $red url("../../icons/icons2/redcheck.png")
+                    no-repeat;
+                opacity: 0;
+            }
+        }
+        .img {
+            width: 60px;
+            height: 60px;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $white;
+            img {
+                max-width: 100%;
+                width: 100%;
+                height: auto;
+            }
+        }
+        .text {
+            font-weight: 494;
+            font-size: 20px;
+            line-height: 22px;
+            color: $blue;
+            margin-left: 30px;
+        }
+        .border {
+            position: absolute;
+            border: 1px solid $red;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            opacity: 0;
+        }
+    }
+}
