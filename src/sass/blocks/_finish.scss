@@ -1,0 +1,26 @@
+.finish {
+    display: none;
+    &__logo {
+        margin-top: 50px;
+    }
+    &__title {
+        margin-top: 40px;
+        font-weight: 494;
+        font-size: 50px;
+        line-height: 56px;
+        /* identical to box height */
+
+        color: #051655;
+    }
+    &__text {
+        margin-top: 10px;
+        font-weight: 375;
+        font-size: 20px;
+        line-height: 22px;
+
+        color: #747887;
+    }
+    &__btn {
+        margin-top: 60px;
+    }
+}

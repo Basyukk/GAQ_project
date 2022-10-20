@@ -48,6 +48,13 @@
             margin-top: 40px;
         }
     }
+    &__step {
+        display: none;
+        &.active {
+            display: flex;
+            flex-direction: column;
+        }
+    }
 }
 .input {
     padding: 20px 20px 20px 65px;
