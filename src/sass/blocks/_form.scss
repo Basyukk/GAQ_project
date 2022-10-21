@@ -19,7 +19,16 @@
         margin-right: 100px;
         flex-shrink: 0;
         background: white;
+        &.active__number {
+            background: red;
+            border: transparent;
+            transition: 0.5s all ease;
+            path {
+                fill: #fff;
+            }
+        }
     }
+
     &__buttons {
         margin-top: 80px;
         gap: 20px;
@@ -35,6 +44,13 @@
     height: 2px;
     background: $lightgray;
     z-index: -1;
+    &__success {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 2px;
+        background: $red;
+    }
 }
 .form {
     // .form__input
@@ -76,8 +92,6 @@
     }
 }
 .form {
-    &__item {
-    }
     &__item-title {
         margin-top: 40px;
         font-weight: 494;
