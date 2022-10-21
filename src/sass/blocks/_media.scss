@@ -1,21 +1,151 @@
+@media (max-width: 1600px) {
+    .container {
+        max-width: 1400px;
+    }
+    main {
+        padding: 47px 130px;
+    }
+    .radio {
+        &__item {
+            max-width: 260px;
+            height: 70px;
+        }
+    }
+    .checkbox {
+        &__item {
+            max-width: 335px;
+            height: 60px;
+        }
+    }
+}
+
 @media (max-width: 1200px) {
     .container {
         max-width: 960px;
     }
+    main {
+        padding: 47px 100px;
+    }
+    .header__item.info__item {
+        padding: 55px 39px;
+    }
 }
+
 @media (max-width: 992px) {
     .container {
         max-width: 720px;
+    }
+    main {
+        padding: 47px 65px;
+    }
+    .logo {
+        padding-bottom: 52px;
+    }
+    .checkbox {
+        &__item {
+            max-width: 275px;
+            height: 60px;
+            padding: 16px;
+
+            .text {
+                margin-left: 7px;
+                max-width: 140px;
+            }
+            .img {
+                width: 50px;
+                height: 50px;
+                padding: 7px;
+            }
+        }
     }
 }
 @media (max-width: 768px) {
     .container {
         max-width: 540px;
     }
+    main {
+        padding: 40px 40px;
+    }
+    .step__number {
+        margin-right: 50px;
+    }
+    .steps__numbers {
+        max-width: 450px;
+    }
+    .radio {
+        &__item {
+            max-width: 100%;
+        }
+    }
+    .checkbox {
+        &__item {
+            max-width: 100%;
+
+            .text {
+                margin-left: 20px;
+                max-width: 100%;
+            }
+            .img {
+                width: 50px;
+                height: 50px;
+                padding: 7px;
+            }
+        }
+    }
+    .file__uploader {
+        flex-direction: column;
+        align-items: center;
+    }
+    .form__item {
+        width: 100%;
+    }
 }
 @media (max-width: 576px) {
     .container {
         width: 100%;
         padding: 0 10px;
+    }
+    main {
+        padding: 40px 15px;
+    }
+
+    .image__item {
+        display: none;
+    }
+
+    .section__title {
+        font-size: 40px;
+        line-height: 37px;
+        margin-bottom: 20px;
+    }
+    .step__buttons {
+        margin-top: 50px;
+    }
+    .step__number {
+        margin-right: 0px;
+    }
+    .progress {
+        display: none;
+    }
+    .file__label {
+        height: 300px;
+        width: 300px;
+    }
+    .telling__inputs {
+        flex-direction: column;
+    }
+    .button {
+        padding: 13px 40px;
+    }
+    .form__item-title {
+        margin-bottom: 15px;
+    }
+    .interest__item {
+        margin-top: 0px;
+        padding: 15px 21px;
+    }
+
+    .file__uploader {
+        gap: 0;
     }
 }
